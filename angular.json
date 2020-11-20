@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "iraitech-assignment"
+    }
+  },
+  "defaultProject": "iraitech-assignment",
+  "cli": {
+    "analytics": false
+  }
 }

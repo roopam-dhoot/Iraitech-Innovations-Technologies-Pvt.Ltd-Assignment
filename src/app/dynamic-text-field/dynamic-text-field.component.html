@@ -1,0 +1,16 @@
+<form [formGroup]="userForm" (ngSubmit)="send(userForm.value)">
+
+    <div *ngFor="let phone of getPhonesFormControls(); let i = index">
+      <label>Phone Number {{i}} </label>    
+      <input [formControl]="phone" type="text">
+    <button (click)="removePhone(i)">Remove Phone</button>    
+    </div>
+    <br>  
+    <button (click)="addPhone()">Add new phone</button>
+    <br>
+    <br>  
+    <input type="submit">
+  </form>
+   
+  
+  {{userForm.value | json}}
