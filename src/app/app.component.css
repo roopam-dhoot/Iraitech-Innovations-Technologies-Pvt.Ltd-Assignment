@@ -1,23 +1,23 @@
 .square-box{
     height:300px;
     width: 500px;
-    border:1px solid black
+    border:1px solid black;
+    position: relative
 }
-app-subcomp1{
-    float: left;
-    top: 3px
+.square-box div{
+    position: absolute;
 }
-app-subcomp2{
-    float: right;
-    left: 3px
+.top{
+    top:0
 }
-app-subcomp3{
-    left: 3px;
-    bottom: 3px!important;
-    width:50%
+.left{
+left:0
 }
-app-subcomp4{
-  float: right!Important;
+.right{
+    right:0
+}
+.bottom{
+    bottom:0
 }
 #input-box{
     margin-left: 22%;

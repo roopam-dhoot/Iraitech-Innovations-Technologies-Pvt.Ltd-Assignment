@@ -1,10 +1,11 @@
 Assignment 4 : communication of 4 components
 <div class="square-box"> 
-  <app-subcomp1 [childmessage]="value"></app-subcomp1>
-  <app-subcomp2 [childmessage]="value"></app-subcomp2>
+  <div class="top left">  <app-subcomp1 [childmessage]="value"></app-subcomp1>
+  </div>
+  <div class="top right"><app-subcomp2 [childmessage]="value"></app-subcomp2></div>
   <input type="text" (input)="onInput($event)" id="input-box">
-  <app-subcomp3 [childmessage]="value"></app-subcomp3>
-  <app-subcomp4 [childmessage]="value"></app-subcomp4>
+  <div class="bottom left"><app-subcomp3 [childmessage]="value"></app-subcomp3></div>
+  <div class="bottom right"><app-subcomp4 [childmessage]="value"></app-subcomp4></div>
 </div>
 <div>
   <br>
